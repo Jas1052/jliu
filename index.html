@@ -148,9 +148,10 @@
         <div class="full-bg-img flex-center">
             <ul>
                 <li>
-                    <h1 class="h1-responsive wow fadeInDown" data-wow-delay="0.2s">Let me introduce myself.</h1></li>
+                    <h1 class="h1-responsive wow fadeInDown" data-wow-delay="0.2s"><span style="font-size:6.5rem">I am </span><span class="element" style="font-size: 6.5rem"></span></h1>
+                </li>
                 <li>
-                    <p class="wow fadeInDown">Hire me</p>
+                    <p class="wow fadeInUp" data-wow-delay="7.75s">Let me introduce myself.</p>
                 </li>
                 <li>
                     <a target="_blank" href="" class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.2s">Contact Me</a>
@@ -359,7 +360,7 @@
 
                         <!--Card image-->
                         <div class="view overlay hm-white-slight">
-                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(3).jpg" class="img-fluid" alt="">
+                            <img src="img/photos/readme.jpg" class="img-fluid" alt="">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -369,10 +370,12 @@
                         <!--Card content-->
                         <div class="card-block text-xs-center">
                             <!--Title-->
-                            <h4 class="card-title">Card title</h4>
+                            <h4 class="card-title">Git Lapse</h4>
                             <hr>
                             <!--Text-->
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga animi architecto dolores dicta cum quo velit.</p>
+                            <p class="card-text">Developed in the TJHSST Web and Mobile Reseach Lab, Git Lapse helps visualize changes to a Git repositories using Composer and XAMPP.
+                                <br><br><a href="documents/README.md">README File</a>
+                            </p>
                         </div>
                         <!--/.Card content-->
 
@@ -388,7 +391,7 @@
 
                         <!--Card image-->
                         <div class="view overlay hm-white-slight">
-                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(15).jpg" class="img-fluid" alt="">
+                            <img src="img/photos/othello.png" class="img-fluid" alt="">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -398,10 +401,12 @@
                         <!--Card content-->
                         <div class="card-block text-xs-center">
                             <!--Title-->
-                            <h4 class="card-title">Card title</h4>
+                            <h4 class="card-title">Othello AI</h4>
                             <hr>
                             <!--Text-->
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga animi architecto dolores dicta cum quo velit.</p>
+                            <p class="card-text">Running in python, this program uses an Alpha-Beta Pruning algorithm to take over the world, one othello game at a time.
+                            <br><br><a href="">Coming Soon</a>
+                            </p>
                         </div>
                         <!--/.Card content-->
 
@@ -417,7 +422,7 @@
 
                         <!--Card image-->
                         <div class="view overlay hm-white-slight">
-                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(18).jpg" class="img-fluid" alt="">
+                            <img src="img/photos/NPDS_flowchart.png" class="img-fluid" alt="">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -427,10 +432,12 @@
                         <!--Card content-->
                         <div class="card-block text-xs-center">
                             <!--Title-->
-                            <h4 class="card-title">Card title</h4>
+                            <h4 class="card-title">NPDS MongoDB</h4>
                             <hr>
                             <!--Text-->
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga animi architecto dolores dicta cum quo velit.</p>
+                            <p class="card-text">NEXUS-PORTAL-DOORS System MongoDB is part of a semantic web solution, which stores XML informatiotn in noSQL database. 
+                            <br><br><a href="documents/insert.js">Sample File</a>
+                            </p>
                         </div>
                         <!--/.Card content-->
 
@@ -446,7 +453,7 @@
 
                         <!--Card image-->
                         <div class="view overlay hm-white-slight">
-                            <img src="http://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(20).jpg" class="img-fluid" alt="">
+                            <img src="img/photos/stockgraph.png" class="img-fluid" alt="">
                             <a>
                                 <div class="mask"></div>
                             </a>
@@ -456,10 +463,12 @@
                         <!--Card content-->
                         <div class="card-block text-xs-center">
                             <!--Title-->
-                            <h4 class="card-title">Card title</h4>
+                            <h4 class="card-title">Stock Visualization</h4>
                             <hr>
                             <!--Text-->
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident fuga animi architecto dolores dicta cum quo velit.</p>
+                            <p class="card-text">This android app helps graph and see changes to a specified stock on the NYSE. The app relies on Firebase and Quadl APIs.
+                            <br><br><a href="documents/stockvisualization">Index [Deprecated]</a>
+                            </p>
                         </div>
                         <!--/.Card content-->
 
@@ -500,38 +509,19 @@
     <!-- Bootstrap core JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
 
-    <!--Google Maps-->
-    <script src="http://maps.google.com/maps/api/js"></script>
+    <!-- Typed.js -->
+    <script type="text/javascript" src="js/typed.js"></script>
 
     <script>
-        function init_map() {
-
-            var var_location = new google.maps.LatLng(40.725118, -73.997699);
-
-            var var_mapoptions = {
-                center: var_location,
-
-                zoom: 14
-            };
-
-            var var_marker = new google.maps.Marker({
-                position: var_location,
-                map: var_map,
-                title: "New York"
+        $(function(){
+            $(".element").typed({
+                strings: ["a problem solver.", "an innovator.", "a coder.", " Jason."],
+                typeSpeed: 10
             });
-
-            var var_map = new google.maps.Map(document.getElementById("map-container"),
-                var_mapoptions);
-
-            var_marker.setMap(var_map);
-
-        }
-
-        google.maps.event.addDomListener(window, 'load', init_map);
+        });
     </script>
 
 
