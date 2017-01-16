@@ -120,7 +120,7 @@
 			var self = this;
 			// Insert cursor
 			if (this.showCursor === true) {
-				this.cursor = $("<span class=\"typed-cursor\">" + this.cursorChar + "</span>");
+				this.cursor = $("<span class=\"typed-cursor\" style=\"font-size: 6.5rem\">" + this.cursorChar + "</span>");
 				this.el.after(this.cursor);
 			}
 			if (this.stringsElement) {
@@ -407,11 +407,11 @@
 		// time before typing starts
 		startDelay: 0,
 		// backspacing speed
-		backSpeed: 0,
+		backSpeed: 20,
 		// shuffle the strings
 		shuffle: false,
 		// time before backspacing
-		backDelay: 1000,
+		backDelay: 2000,
 		// loop
 		loop: false,
 		// false = infinite
