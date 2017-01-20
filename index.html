@@ -120,26 +120,26 @@
                 <a class="navbar-brand" href="" target="_blank"></a>
                 <!--Left Side-->
                 <ul class="nav navbar-nav">
-                    <li class="nav-item borderXwidth">
+                    <li class="nav-item animateUnderline">
                         <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item pullUp">
+                    <li class="nav-item animateUnderline">
                         <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li class="nav-item pullUp">
+                    <li class="nav-item animateUnderline">
                         <a class="nav-link" href="#skills">Skills</a>
                     </li>
-                    <li class="nav-item pullUp">
+                    <li class="nav-item animateUnderline">
                         <a class="nav-link" href="#projects">Projects</a>
                     </li>
                 </ul>
                 <ul class="nav navbar-nav nav-flex-icons">
-                    <li class="nav-item pullU"p>
+                    <li class="nav-item animateUnderline"p>
                         <a class="nav-link waves-effect waves-light" target="_blank" href="documents/Jason_Liu_Resume.pdf">
                             <i class="fa fa-file-text faa-tada animated-hover"></i>
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item animateUnderline">
                         <a class="nav-link waves-effect waves-light" href="https://www.github.com/Jas1052">
                             <i class="fa fa-github faa-tada animated-hover"></i>
                         </a>
@@ -500,7 +500,8 @@
     <footer class="page-footer" style="padding-top: 0">
         <div class="footer-copyright">
             <div class="container-fluid">
-                Made with <i class="fa fa-heart faa-pulse animated fa-1x" style="color: #F44336;" aria-hidden="true"></i> by <b> Jason Liu </b>
+                <!--Made with <i class="fa fa-heart faa-pulse animated fa-1x" style="color: #F44336;" aria-hidden="true"></i> by <b> Jason Liu </b>-->
+                Made with <img src="img/withlove.png" style="width: 25px; height: 25px"> by <b> Jason Liu </b>
             </div>
         </div>
     </footer>
@@ -516,11 +517,14 @@
     <!-- Custome JS -->
     <script type="text/javascript" src="js/custom.js"></script>
 
+    <!--Materialize-->
+    <script type="text/javascript" src="js/materialize.js"></script>
+
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/tether.min.js"></script>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="js/mdb.min.js"></script>
@@ -531,7 +535,7 @@
     <script>
         $(function(){
             $(".element").typed({
-                strings: ["Hello, World!", "Nice to meet you.", "I am Jason."],
+                strings: ["Hello, World!", "I'm Jason."],
                 typeSpeed: 30
             });
         });
