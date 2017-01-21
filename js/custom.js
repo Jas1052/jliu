@@ -9,14 +9,17 @@ $(document).ready(function(){
             'scrollTop': $target.offset().top
         }, 900, 'swing');
     });
-});
-$(document).ready(function() {
-  $('.progress .progress-bar').css("width",
-            function() {
-                return $(this).attr("aria-valuenow") + "%";
-            }
+    
+    $('.progress .progress-bar').css("width",
+        function() {
+            return $(this).attr("aria-valuenow") + "%";
+        }
     )
+    $("#primary-intro").animate({ 
+        top: "-=30px",
+      }, 500 );
 });
+
 
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()

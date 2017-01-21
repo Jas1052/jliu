@@ -35,7 +35,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!--Materialize -->
-    <!--<link href="css/Materialize/css/materialize.min.css" rel="stylesheet">-->
+    <!--<link href="css/materialize/css/materialize.min.css" rel="stylesheet">-->
 
     <!--Custom CSS -->
     <link href="css/style.css" type="text/css" rel="stylesheet">
@@ -79,7 +79,7 @@
         }
         
         .view {
-            background: url("img/parallax/stars.jpg")no-repeat center center fixed;
+            background: url("img/parallax/spacestars.jpg")no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
@@ -158,14 +158,14 @@
         <div class="full-bg-img flex-center">
             <ul>
                 <li>
-                    <h1 class="h1-responsive wow fadeInDown" data-wow-delay="0.2s"><span style="font-size:6rem"></span><span class="element" style="font-size: 6.5rem"></span></h1>
+                    <h1 id='primary-intro' class="h1-responsive wow fadeInDown" data-wow-delay="0s"><span style="font-size:6rem"></span><span class="element" style="font-size: 6.5rem"></span></h1>
                 </li>
                 <li>
-                    <p class="wow fadeInUp" data-wow-delay="9s">Welcome to my website!</p>
+                    <p id="secondary-intro" class="wow fadeInUp" data-wow-delay="3.5s" style="font-size: 2em;">Programmer / Student / Heavy Sleeper</p>
                 </li>
                 <li>
-                    <a target="_blank" href="mailto:jliu1052@gmail.com?Subject=Hello%20Jason!" class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.2s">Contact Me</a>
-                    <a target="_blank" href="" class="btn btn-default btn-lg disabled wow fadeInRight" data-wow-delay="0.2s">Blog</a>
+                    <a target="_blank" id='contactmebutton' href="mailto:jliu1052&#64;gmail.com?Subject=Hello%20Jason!" class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="4s">Contact Me</a>
+                    <a target="_blank" id='blogbutton' href="" class="btn btn-default btn-lg disabled wow fadeInRight" data-wow-delay="4s">Blog</a>
                 </li>
             </ul>
         </div>
@@ -179,7 +179,7 @@
         <div class="divider-new">
             <h2 class="h2-responsive wow fadeInDown">About Me</h2>
         </div>
-
+        <section>
         <!--Section: About-->
             <div class="row">
 
@@ -193,14 +193,13 @@
                     </div>
                 </div>
                 <section class="text-xs-center">
-                    <div class="col-md-8 mb-r" style="text-align: justify">
-                        <p class="wow fadeInUp" data-wow-delay="0.2s">Currently a senior at Thomas Jefferson High School for Science and Technology, I have continually worked closely with STEM and computer science both in and out of school. By enrolling in advanced courses that are angled toward CS, the last four years have helped me develop and extend my programming skills. I am currently taking in Artificial Intelligence 1 and will soon be taking Artificial Intelligence 2 and Computer Vision. I am also working in my school's special Web and Mobile Research Lab, where I am developing an application for practical visualization of Git repositories.
-                        </p>
-                        <p class="wow fadeInUp" data-wow-delay="0.4s">Outside of school, I have worked as a STEM teacher assistant as part of my high school's STEM outreach program, participated in Capture the Flag programming challenges, and competed in Hackathons. I have also worked for Brain Health Alliance, a company that specializes in using computer science to find solutions to neurological problems. There, I collaborated closely with college and high school students to develop a full-stack solution to the <a href="https://www.w3.org/standards/semanticweb/">semantic web</a> by utilizing tools like Node.js, AngularJS, and MongoDB.
-                        </p>
-                        <p class="wow fadeInUp" data-wow-delay="0.6s">To me, programming has no limitations. There is no problem too great, no solution too far, and no idea too impossible. All that matters is the dedication and ambition that each coder has and the intrinsic drive that we carry. Currently, I have experience with both front end web programming and RDBMS database management. In the future, I want to get into software development and artifcial intelligence, hence my current classes. If you want to know more, contact me at jliu1052@gmail.com and find other information in the top right of the page. </p>
+                    <div class="col-md-8 mb-r" style="text-align: justify;">
+                        <br><br><br>
+                        <p class="wow fadeInUp" data-wow-delay="0.2s" >Hello, I'm Jason Liu. I'm a programmmer who is especially interested in software development. I'm still a student, so I'm learning and slowly trying to find a passion I want to follow. I'm located in Northern Virginia, around 30 minutes from DC. <b>You can contact me at jliu1052&#64;gmail.com</b></p>
+                        <p class="wow fadeInUp" data-wow-delay="0.4s" >I currently attend Thomas Jefferson High School as a senior with heavy coursework toward STEM and Computer Science. Right now, I'm working in my school's Web and Mobile Research Lab to develop a better visualization for Git.</p>
+                        <p class="wow fadeInUp" data-wow-delay="0.6s" >Outside of programming and school, I love to row as part of my high school's crew team. I also enjoy videogames and sleeping.</p>
                     </div>
-                    <!--/Second column-->
+                </section>
 
             </div>
         </section>
@@ -412,7 +411,7 @@
                             <hr>
                             <!--Text-->
                             <p class="card-text">Running in python, this program uses an Alpha-Beta Pruning algorithm to take over the world, one othello game at a time.
-                            <br><br><a href="documents/othello.py">Client</a>
+                            <br><br><a href="">Client</a>
                             </p>
                         </div>
                         <!--/.Card content-->
@@ -512,7 +511,7 @@
     <script type="text/javascript" src="js/custom.js"></script>
 
     <!--Materialize-->
-    <script type="text/javascript" src="js/materialize.js"></script>
+    <!--<script type="text/javascript" src="js/materialize.js"></script>-->
 
     <!-- Bootstrap tooltips -->
     <script type="text/javascript" src="js/tether.min.js"></script>
