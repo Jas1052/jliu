@@ -15,9 +15,6 @@ $(document).ready(function(){
             return $(this).attr("aria-valuenow") + "%";
         }
     )
-    $("#primary-intro").animate({ 
-        top: "-=30px",
-      }, 500 );
 });
 
 
