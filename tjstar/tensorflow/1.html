@@ -22,31 +22,8 @@
     document.onkeydown = checkKey;
     function checkKey(e) {
         e = e || window.event;
-      if (e.keyCode == '37') {
-          var fileName = location.href.split('/').slice(-1); 
-          fileName = fileName.toString();
-          var dotIndex = fileName.indexOf('.');
-          fileCount = fileName.substring(5, dotIndex);
-          var count = parseInt(fileCount);
-          count--;
-          if(count>0){
-            document.location.href = 'www.jasonjliu.com/tjstar/tensorflow/' + count + '.html';
-         }
+      if (e.keyCode == '39') {
+          document.location.href = 'www.jasonjliu.com/tjstar/tensorflow/2.html';
         }
-        else if (e.keyCode == '39') {
-           // right arrow
-           var fileName = location.href.split('/').slice(-1); 
-           fileName = fileName.toString();
-           var dotIndex = fileName.indexOf('.');
-           fileCount = fileName.substring(5, dotIndex);
-           var count = parseInt(fileCount);
-           count++;
-          $.get('www.jasonjliu.com/tjstar/tensorflow/' + count + '.html')
-            .done(function() { 
-              document.location.href = 'www.jasonjliu.com/tjstar/tensorflow/' + count + '.html';
-            }).fail(function() { 
-                  // not exists code
-            })
-          }
-      }
+    }
 </script>
