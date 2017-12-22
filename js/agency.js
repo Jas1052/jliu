@@ -50,4 +50,11 @@
   //tool tip trigger
   $('[data-toggle="tooltip"]').tooltip();
 
+  $("#love").hover(function() {
+      $(this).append('by Jason');
+    },
+      function() {
+       $("#love").html("Made with <i class=\"fas fa-heart fa-lg text-danger\"></i> ");
+  });
+
 })(jQuery); // End of use strict
