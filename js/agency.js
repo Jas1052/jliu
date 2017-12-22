@@ -47,4 +47,7 @@
     $(".navbar").removeClass("d-none");
   })
 
+  //tool tip trigger
+  $('[data-toggle="tooltip"]').tooltip();
+
 })(jQuery); // End of use strict

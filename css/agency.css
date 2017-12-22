@@ -12,7 +12,7 @@ a {
 }
 
 a:hover {
-  color: #fec503;
+  color: #BBDEFB;
 }
 
 .text-primary {
@@ -702,4 +702,24 @@ ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons l
 
 .image-padding {
   padding: 10px 50px 10px;
+}
+
+.tooltip-inner {
+  text-align: center;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #212529;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+.tooltip.bs-tooltip-right .arrow:before {
+  display: none;
+}
+.tooltip.bs-tooltip-left .arrow:before {
+  display: none;
+}
+.tooltip.bs-tooltip-bottom .arrow:before {
+  display: none;
+}
+.tooltip.bs-tooltip-top .arrow:before {
+  display: none;
 }
