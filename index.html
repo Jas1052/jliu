@@ -71,7 +71,7 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-heading text-uppercase reveal">I want to <span class="element"></span></div>
+        <div class="intro-heading text-uppercase reveal">Passion to <span class="element"></span></div>
         <div class="intro-lead-in reveal reveal">Jason Liu</div>
       </div>
     </div>
@@ -115,14 +115,14 @@
         <div class="col-md-12 col-lg-7">
           <h3 class="text-left reveal">Hi! I'm Jason. </h3>
           <br>
-          <p class="text-left text-muted reveal"> <b> Only read this if you want to know too much about me. </b> Honestly, I'm not sure what to say. I'm from the great state of Virginia, near DC. However, I currently attend University of Wisconsin-Madison, planning to major in CS.
+          <p class="text-left text-muted reveal"> Honestly, I'm not sure what to say. I'm from Virginia, near DC. However, I currently attend University of Wisconsin-Madison, planning to major in CS.
           </p>
-          <p class="text-left text-muted reveal"> I love to workout, watch movies, and read. My favorite movie is "Pulp Fiction." It completely blew my mind. My favorite book is "A Short History of Nearly Everything" by Bill Bryson. I love food, especially sushi. Seriously, I want to eat sushi
-            literally 24/7. </p>
-          <p class="text-left text-muted reveal"> If you've made it this far, you're really committed. So, I'll tell you the final important things. Firstly, <b> tabs not spaces. </b> I cannot emphasize this enough. Secondly, vim is better than emac. Don't let anyone else tell you differently.
+          <p class="text-left text-muted reveal"> I started coding when I was in middle school and I fell in love with it. I'm most interested in AI, just purely because of it's potential to change the world, but I also love web and software development. Honestly, as long as I continue to learn and improve, I'm satisfied. My main goal in CS is to create something I can truly appreciate. My work/coding environment is currently on <a href="https://github.com/Jas1052/i3wm"> Fedora with i3 </a> installed. I just think it just makes my life easier, especially since Windows is not very friendly to developers. 
+          </p>
+          <p class="text-left text-muted reveal"> Outside of CS, I love to workout, watch movies, and read. My favorite movie is "Pulp Fiction." It completely blew my mind. My favorite book is "A Short History of Nearly Everything" by Bill Bryson. It's just a recommended read, especially since Bryson somehow makes history so incredibly interesting.</p>
           </p>
           <p class="text-left text-muted reveal">
-            If you want to know even more, you can contact me at <b> jliu1052&#64;gmail.com </b>.
+            If you want to know even more, you can contact me at <b> jliu1052&#64;gmail.com. </b>.
           </p>
         </div>
       </div>
@@ -244,16 +244,31 @@
     </div>
   </section>
 
-  <!-- Team -->
-  <section class="bg-light" id="team">
+  <!-- Learn -->
+  <section class="bg-light" id="learn">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading text-uppercase">Links</h2>
-          <h3 class="section-subheading text-muted">Nothing here yet...</h3>
+          <h3 class="section-subheading text-muted">What I'm Currently Learning</h3>
         </div>
       </div>
-    </div>  
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 col-sm-6 project-item reveal">
+          <a class="project-link" href="http://cs224d.stanford.edu/syllabus.html">
+            <div class="project-hover">
+              <div class="project-hover-content">Learn More</div>
+            </div>
+            <img class="img-fluid" src="img/projects/treeFrontSentiment.png" alt="cannyedgedetection">
+          </a>
+          <div class="project-caption">
+            <h4>Stanford's Natural Language Processing</h4>
+            <p class="text-muted">Machine Learning for Language</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Footer -->
@@ -403,32 +418,6 @@
       </div>
     </div>
 
-    <!-- Modal 4 -->
-    <!--
-    <div class="project-modal modal fade " id="projectModal4 " tabindex="-1 " role="dialog " aria-hidden="true ">
-      <div class="modal-dialog ">
-        <div class="modal-content ">
-          <div class="close-modal " data-dismiss="modal ">
-            <div class="lr ">
-              <div class="rl "></div>
-            </div>
-          </div>
-          <div class="container ">
-            <div class="row ">
-              <div class="col-lg-8 mx-auto ">
-                <div class="modal-body ">
-                  <h2 class="text-uppercase ">Snake</h2>
-                  <p class="item-intro text-muted ">A mini game I made for fun</p>
-                  <img class="img-fluid d-block mx-auto " src="# "" alt="">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  -->
-
   <!-- Modal 5 -->
   <div class="project-modal modal fade" id="projectModal5" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -512,10 +501,11 @@
   <script>
     $(function() {
       $(".element").typed({
-        strings: ["create.", "innovate.", "learn."],
+        strings: ["learn...", "create...", "improve."],
         startDelay: 100,
         typeSpeed: 30,
-        loop: true,
+        backDelay: 1500, 
+        loop: false,
         showCursor: false
       });
     });
